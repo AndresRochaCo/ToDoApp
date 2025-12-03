@@ -18,7 +18,8 @@
           <h1>Welcome</h1>
         </div>
         <div class="menu-controls-right">
-          <label for="">Add Task </label><i class="fa-solid fa-plus"></i>
+              <button id="button-add-task">Add Task <i id="plus-sign" class="fa-solid fa-plus"></i></button>
+         
         </div>
       </div>
 
@@ -31,6 +32,27 @@
     <div class="task-container" id="rightTasks"></div>
   </div>
 </div>
+
+
+<!-- this is the form that will be hidden, once clicked it should pop up -->
+<!-- Hidden form modal -->
+<div id="taskModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Add New Task</h2>
+    <label>Task Title</label>
+    <input type="text" id="taskTitle">
+
+    <label>Task Description</label>
+    <textarea id="taskDesc"></textarea>
+
+    <button id="submitTask">Submit</button>
+    <button id="closeModal">Close</button>
+  </div>
+</div>
+
+
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
