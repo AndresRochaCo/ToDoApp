@@ -1,0 +1,100 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+
+.body-container {
+  background-color: #ffffff;  /* black background */
+  color: #000000;             /* white text */
+  font-family: Arial, sans-serif;
+  
+ 
+}
+
+
+
+
+.menu-controls{
+  display: flex;
+  margin: 0;
+  background-color: black;
+  color: white;
+
+}
+
+
+.menu-controls-left{
+
+  width: 50%;
+}
+
+
+.menu-controls-right{
+  background-color: black;
+  color: white;
+  width: 50%;
+  font-size: large;
+  margin: 1em;
+}
+
+
+
+
+.to-to-list-items-display{
+  display: flex;           /* makes children sit in a row */
+  gap: 10px;               /* space between panels */
+  margin: 1%;
+  flex-wrap: wrap; 
+  
+}
+
+
+
+
+
+
+/* Panels themselves */
+.to-do-list-items-display-left,
+.to-do-list-items-display-right {
+  flex: 1;                 /* take equal space */
+  border-radius: 1em;
+  border: 5px dashed rgb(0, 0, 0);
+  height: 80vh;
+  background-color: rgb(255, 255, 255); /* optional for theme */
+  color: rgb(0, 0, 0);
+  padding: 1em;
+  box-sizing: border-box;  /* include padding/border in width */
+  min-width: 300px;        /* prevent panels from shrinking too much */
+}
+
+
+.to-do-list-items-display-right{
+  flex: 3;
+}
+
+
+
+#help{
+  background-color: black;
+  margin: 2%;
+  color: white;
+  border: none;
+  padding: 1em;
+  font-size: large;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
