@@ -27,3 +27,44 @@ taskModal.addEventListener("click", (event) => {
 
 
 
+
+// Capturing user info
+const submitTask = document.getElementById("submitTask");
+
+submitTask.addEventListener("click", () => {
+  const title = document.getElementById("taskTitle").value;
+  const description = document.getElementById("taskDesc").value;
+
+  console.log("Task added:", title, description);
+});
+
+
+
+// generate a task box in the right panel 
+submitTask.addEventListener("click", () => {
+  const title = document.getElementById("taskTitle").value;
+  const desc = document.getElementById("taskDesc").value;
+
+  const taskBox = document.createElement("div");
+  taskBox.classList.add("task-box");
+
+  taskBox.innerHTML = `
+    <h3>${title}</h3>
+    <p>${desc}</p>
+  `;
+
+  document.getElementById("rightTasks").appendChild(taskBox);
+
+  // Close modal after adding
+  taskModal.classList.remove("show");
+  taskModal.classList.add("hidden");
+
+
+  // clear the form text after adding 
+  document.getElementById("taskTitle").value = "";
+document.getElementById("taskDesc").value = "";
+});
+
+
+
+
